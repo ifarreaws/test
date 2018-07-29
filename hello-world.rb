@@ -5,6 +5,6 @@ redis = Redis.new(:host => ENV["REDIS_HOST"] || "127.0.0.1" , :port => ENV["REDI
 
 get '/' do
   redis.ping
-  "Hello World! TEST IT"
+  "Hello World! TEST IT!!"
 end
  
