@@ -1,6 +1,6 @@
-FROM openshift/ruby:latest
+#FROM openshift/ruby:latest
 #FROM centos/ruby-24-centos7
-#FROM ruby:2.5-alpine
+FROM ruby:2.5-alpine
 #RUN apk update && apk add build-base nodejs postgresql-dev
 
 RUN mkdir /app
