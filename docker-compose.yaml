@@ -1,0 +1,12 @@
+app:
+  image: 172.30.1.1:5000/rails-test:latest
+  environment:
+    REDIS_HOST: redis 
+    REDIS_PORT: 6379 
+  ports:
+    - "4567:4567"
+  links:
+    - redis
+
+redis:
+  image: redis
